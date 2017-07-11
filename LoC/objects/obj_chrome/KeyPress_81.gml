@@ -10,5 +10,6 @@ if (keyboard_check(ord("Q")))
 	{
 		sprite_index = spr_small_chrome;
 	}
+	y-=32;
 }
 
