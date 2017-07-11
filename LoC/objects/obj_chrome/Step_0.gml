@@ -11,13 +11,13 @@ if vspeed>10{vspeed=10}
 
 
 if (keyboard_check(ord("W")) and !place_free(x,y+1)){
-	vspeed-=10;
+	vspeed-=18;
 }
 if (keyboard_check(ord("A")) and place_free(x-1,y)){
-	x-=4;
+	x-=8;
 }
 if (keyboard_check(ord("D")) and place_free(x+1,y)){
-	x+=4;
+	x+=8;
 }
 
 
