@@ -10,3 +10,7 @@ direct = 1;
 // for shooting
 bullet_count_set = 60;
 bullet_countdown = 60;
+
+// for jump
+jump_count_set = 60;
+jump_count_down = 40;
