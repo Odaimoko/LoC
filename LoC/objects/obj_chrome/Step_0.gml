@@ -21,6 +21,7 @@ if (keyboard_check(ord("D")) and place_free(x+1,y)){
 }
 
 
+// go into folder
 //draw_text(x,y,instance_nearest(x,y,obj_folder));
 if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder){
 	if instance_nearest(x,y,obj_folder)==100004{
@@ -33,5 +34,26 @@ if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder){
 		room_goto(room0);
 	}
 	
+}
+
+
+// shoot
+if(mouse_check_button(mb_left) && shoot_interval <= 0){
+	shoot_interval = SHOOT_INTERVAL;
+	var theid = instance_create_layer(x,y,"bulletlayer",obj_chrome_bullet);
+	switch(shooting)
+	{
+		case "r":
+			with(theid) sprite_index = spr_red_bullet;
+			break;
+		case "g":
+			with(theid) sprite_index = spr_green_bullet;
+			break;
+		case "y":
+			with(theid) sprite_index = spr_yellow_bullet;
+			break;
+	}
 	
 }
+
+shoot_interval--;
