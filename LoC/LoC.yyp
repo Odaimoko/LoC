@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "30820692-c771-451f-a825-a65639bb4c59",
+            "Value": {
+                "id": "17829428-efc2-4163-8fcc-e69fda82151c",
+                "resourcePath": "objects\\obj_music\\obj_music.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31132a93-4322-4983-851a-ae7f9c55efe4",
             "Value": {
                 "id": "3414315d-9476-48b9-afd9-f8b82cd7be4b",
@@ -92,6 +100,14 @@
                 "id": "faa3a379-698d-4232-8958-e51a0d5ce3da",
                 "resourcePath": "views\/3d7faf60-136d-4f61-994c-90c11d12d28d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3d83428c-0de5-439f-8e71-1ded17f8bd80",
+            "Value": {
+                "id": "e506a49e-a5f8-4c6e-b489-221da65ff562",
+                "resourcePath": "sprites\\spr_music\\spr_music.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -140,6 +156,14 @@
                 "id": "b800383e-1609-4a21-bf82-edd8241497b3",
                 "resourcePath": "sprites\/spr_yellow_bullet\/spr_yellow_bullet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6db967ed-a6ca-44b5-96dd-463c2091aa30",
+            "Value": {
+                "id": "0813e7f4-e863-4114-829f-e0d99fc386e0",
+                "resourcePath": "sounds\\sound0\\sound0.yy",
+                "resourceType": "GMSound"
             }
         },
         {
