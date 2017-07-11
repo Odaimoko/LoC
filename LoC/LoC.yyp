@@ -134,6 +134,25 @@
             }
         },
         {
+            "Key": "31132a93-4322-4983-851a-ae7f9c55efe4",
+            "Value": {
+                "id": "3414315d-9476-48b9-afd9-f8b82cd7be4b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_safari_bullet\/spr_safari_bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34ab5deb-d89b-4b37-8a27-d4deebcbd30e",
             "Value": {
                 "id": "e47b94a8-21ef-444c-95e9-62410f698cf7",
@@ -283,6 +302,25 @@
                 ],
                 "resourcePath": "views\/82fe5013-2c43-4378-ba71-4b031359187e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "850b3139-9f4f-4978-b573-ccf5ab7b0f79",
+            "Value": {
+                "id": "6c99defc-ffc2-4715-88cc-bdbfa785d9c3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_safari_bullet\/obj_safari_bullet.yy",
+                "resourceType": "GMObject"
             }
         },
         {

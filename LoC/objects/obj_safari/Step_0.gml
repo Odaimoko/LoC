@@ -8,3 +8,10 @@ else{
 }
 
 if vspeed>10{vspeed=10;}
+
+// shoot the enemy
+if (bullet_countdown <= 0){
+	instance_create_layer(x,y,"bulletlayer",obj_safari_bullet);
+	bullet_countdown = bullet_count_set;
+}
+bullet_countdown = bullet_countdown - 1;
