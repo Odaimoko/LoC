@@ -57,3 +57,6 @@ if(mouse_check_button(mb_left) && shoot_interval <= 0){
 }
 
 shoot_interval--;
+if(y>1080){
+	game_restart();
+}
