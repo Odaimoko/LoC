@@ -38,22 +38,29 @@ if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder){
 
 
 // shoot
-if(mouse_check_button(mb_left) && shoot_interval <= 0){
+--shoot_interval;
+if(mouse_check_button(mb_left) && shoot_interval <= 0
+	&& sprite_index = spr_big_chrome){
 	shoot_interval = SHOOT_INTERVAL;
-	var theid = instance_create_layer(x,y,"bulletlayer",obj_chrome_bullet);
+	if(
+		(shooting=="g" && shootGreen==1) ||
+		(shooting == "r" && shootRed==1 ) || 
+		(shooting=="y" && shootYellow==1) )
+		var theid = instance_create_layer(x,y,"bulletlayer",obj_chrome_bullet);
 	switch(shooting)
 	{
 		case "r":
-			with(theid) sprite_index = spr_red_bullet;
+			if(shootRed==1)
+				with(theid) sprite_index = spr_red_bullet;
 			break;
 		case "g":
-			with(theid) sprite_index = spr_green_bullet;
+			if(shootGreen==1)
+				with(theid) sprite_index = spr_green_bullet;
 			break;
 		case "y":
-			with(theid) sprite_index = spr_yellow_bullet;
+			if(shootYellow==1)
+				with(theid) sprite_index = spr_yellow_bullet;
 			break;
 	}
 	
 }
-
-shoot_interval--;

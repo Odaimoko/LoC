@@ -3,7 +3,15 @@
 vspeed = 0;
 bigorsmall=1;
 shooting = "y";
-SHOOT_INTERVAL = 10;
+shootRed=1;
+shootYellow=1;
+shootGreen=1;
+SHOOT_INTERVAL = 5;
 shoot_interval = SHOOT_INTERVAL;
 
-hp = 4;
+// big and small chrome's hp
+CHROME_MAXHP_BIG=4;
+CHROME_MAXHP_SMALL=1;
+hp = CHROME_MAXHP_BIG;
+pre_hp_big=CHROME_MAXHP_BIG;
+pre_hp_small = CHROME_MAXHP_SMALL;
