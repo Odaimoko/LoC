@@ -1,41 +1,31 @@
 {
-    "id": "30820692-c771-451f-a825-a65639bb4c59",
+    "id": "11b589b0-8aee-447c-816c-8df788957a3f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_music",
+    "name": "obj_camera",
     "eventList": [
         {
-            "id": "a7dfc3b0-386f-40f3-b540-526d83640242",
+            "id": "9661d0dc-0cb5-48ec-a551-d1120ad71855",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "0a7ce8d1-3048-44d8-9840-4dfde64f0085",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "11b589b0-8aee-447c-816c-8df788957a3f"
+        },
+        {
+            "id": "975b2c29-4f6f-43eb-8750-704ddeb08d0f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "30820692-c771-451f-a825-a65639bb4c59"
-        },
-        {
-            "id": "49f191bd-da4b-49dd-8a5c-f1505ae24f0e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "90a49642-d357-41f0-b13d-f7ce2ceb3d3a",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "30820692-c771-451f-a825-a65639bb4c59"
-        },
-        {
-            "id": "cd197d8f-367a-4a43-83e1-b6d0f72e9400",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "30820692-c771-451f-a825-a65639bb4c59"
+            "m_owner": "11b589b0-8aee-447c-816c-8df788957a3f"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "6b229252-32b1-4d1e-a847-a5508f051246",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -51,6 +41,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "3d83428c-0de5-439f-8e71-1ded17f8bd80",
+    "spriteId": "6b229252-32b1-4d1e-a847-a5508f051246",
     "visible": true
 }

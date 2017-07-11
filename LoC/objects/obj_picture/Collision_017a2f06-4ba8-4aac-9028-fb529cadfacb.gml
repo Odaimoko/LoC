@@ -7,5 +7,5 @@ with (other){
 }
 
 if (hp <= 0){
-	dead = 1;
+	dead=1;
 }

@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = hp - 1;
 
-with (other){
-	instance_destroy();
-}
+// hp 
+dead = 0
+deadtheta=0;
+hp = 25;
 
-if (hp <= 0){
-	dead = 1;
-}
+// shooting
+
+// death

@@ -1,11 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = hp - 1;
-
-with (other){
-	instance_destroy();
+if vspeed > 0 && !place_free(x,y+vspeed){
+	move_contact(270)
 }
-
-if (hp <= 0){
-	dead = 1;
-}
+vspeed = 0
