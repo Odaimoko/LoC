@@ -65,8 +65,7 @@ if(mouse_check_button(mb_left) && shoot_interval <= 0
 	
 }
 
-
-shoot_interval--;
-if(y>1080){
+if(y>1080 || hp <= 0){
 	game_restart();
 }
+
