@@ -55,7 +55,7 @@ switch(global.cutscene)
 	case "009":
 		str_tutorial="NOW PRESS '3' TO CHOOSE YELLOW BULLET";
 		break;
-	case "00a":
+	case "00b":
 		str_tutorial="IT'S OK FOR YOU TO CONTINUE YOUR JOURNEY. ENJOY...";
 		break;
 	default:

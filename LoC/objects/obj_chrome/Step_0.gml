@@ -123,7 +123,7 @@ else if (global.cutscene == "009"){
 else if (global.cutscene == "00a"){
 	chr_m_n_s();
 	alarm[0]=2000;
-	global.cutscene = "00b";
+	global.cutscene="00b";
 }
 else if (global.cutscene == "00b"){
 	chr_m_n_s();
