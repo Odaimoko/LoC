@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "206a80bb-7296-42b0-9088-9bc656f7501e",
+            "Value": {
+                "id": "ac91bc4c-a21a-4e15-b1d2-5a5c77784292",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/chr_bullet_collision\/chr_bullet_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "30820692-c771-451f-a825-a65639bb4c59",
             "Value": {
                 "id": "17829428-efc2-4163-8fcc-e69fda82151c",
@@ -972,7 +991,8 @@
     ],
     "script_order": [
         "ae70bb3e-f796-48f0-9285-dee5752df65a",
-        "31dafa24-f78c-471b-b6cc-ed785f8e2667"
+        "31dafa24-f78c-471b-b6cc-ed785f8e2667",
+        "206a80bb-7296-42b0-9088-9bc656f7501e"
     ],
     "tutorial": ""
 }

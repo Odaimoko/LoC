@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+enemyType = "pic";
 dead = 0
 deadtheta=0;
 
