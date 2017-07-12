@@ -36,4 +36,5 @@ original_y=0;
 back_speed=10;
 started_back=false;
 
-// 
+// drop bullet
+hasDroppedBullet=0;

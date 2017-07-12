@@ -1,3 +1,24 @@
+// FOR ALL CREATE HP
+if(random_range(0,10)>4 && hasDroppedBullet==0){
+	hasDroppedBullet=1;
+	var color;
+	switch(sprite_index)
+	{
+		case spr_picture:
+			color = spr_yellow_bullet;
+			break;
+		case spr_music:
+			color = spr_red_bullet;
+			break;
+		case spr_camera:
+			color = spr_green_bullet;
+			break;
+	}	
+	create_hp(color,x,y);
+} else 
+	hasDroppedBullet=1;
+
+
 // for camera
 if (sprite_index == spr_camera){
 	if (back_to_place == false){	// doesn't have original place to go
