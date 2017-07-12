@@ -2,7 +2,7 @@
     "id": "d133f7e5-4acb-4dc8-b582-c71c88082a64",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "middl",
+    "name": "middle",
     "IsDnD": false,
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
@@ -74,8 +74,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_53FC821E",
-                    "x": 896,
-                    "y": 960,
+                    "x": 544,
+                    "y": 832,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -98,8 +98,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_61729FDB",
-                    "x": 928,
-                    "y": 640,
+                    "x": 832,
+                    "y": 736,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -122,8 +122,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_402E0B5D",
-                    "x": 1376,
-                    "y": 704,
+                    "x": 1664,
+                    "y": 832,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -146,8 +146,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_100004",
-                    "x": 1216,
-                    "y": 384,
+                    "x": 1376,
+                    "y": 416,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -170,8 +170,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_100005",
-                    "x": 544,
-                    "y": 384,
+                    "x": 896,
+                    "y": 192,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -293,7 +293,7 @@
         "Height": 1080,
         "Width": 1920,
         "inheritRoomSettings": false,
-        "persistent": true
+        "persistent": false
     },
     "viewSettings": {
         "id": "5c090d75-b03e-4785-8a65-995e8ea8404d",

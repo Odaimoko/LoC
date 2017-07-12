@@ -37,7 +37,7 @@ if (keyboard_check(ord("D")) and place_free(x+1,y)) and (can_d==1){
 //draw_text(x,y,instance_nearest(x,y,obj_folder));
 if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1){
 	if instance_nearest(x,y,obj_folder)==100004{
-		room_goto(stage1);
+		room_goto(Final);
 	}
 	if instance_nearest(x,y,obj_folder)==100005{
 		room_goto(stage2);

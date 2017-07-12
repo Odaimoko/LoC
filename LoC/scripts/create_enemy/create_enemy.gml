@@ -37,8 +37,8 @@ with (theid){
 			hp = 10;
 
 			// shooting
-			bullet_count_down = 30;
-			bullet_count_set = 30;
+			bullet_count_down = 60;
+			bullet_count_set = 60;
 			
 			
 			break;

@@ -2,7 +2,7 @@
     "id": "a6b15e32-1a31-4e9e-83f3-fb5867f1a53e",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "stage1",
+    "name": "Final",
     "IsDnD": false,
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
@@ -51,8 +51,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_29A8581D",
-                    "x": 1120,
-                    "y": 992,
+                    "x": 1088,
+                    "y": 736,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -124,7 +124,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_1E9D315C",
                     "x": 224,
-                    "y": 704,
+                    "y": 832,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -171,8 +171,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_1A36165F",
-                    "x": 1216,
-                    "y": 416,
+                    "x": 1344,
+                    "y": 576,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -195,7 +195,7 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_3ED00DAE",
-                    "x": 256,
+                    "x": 160,
                     "y": 480,
                     "IsDnD": false,
                     "colour": {

@@ -4,14 +4,16 @@
     "mvc": "1.0",
     "name": "stage2",
     "IsDnD": false,
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "84b6ed71-0f9f-42e6-a555-64624493325e",
         "076256c1-d8c3-456f-bb86-62d3649fb58a",
-        "b37a0def-1373-4844-a5d8-182ed5997da7"
+        "b37a0def-1373-4844-a5d8-182ed5997da7",
+        "16d38b46-4e87-4ee9-bae1-b28bfabd3822",
+        "8c9838ec-03ab-42ad-8bdb-afaa8a0202e6"
     ],
     "layers": [
         {
@@ -46,8 +48,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_70C304ED",
-                    "x": 320,
-                    "y": 544,
+                    "x": 64,
+                    "y": 928,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -70,8 +72,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_65A32D33",
-                    "x": 448,
-                    "y": 224,
+                    "x": 160,
+                    "y": 768,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -94,8 +96,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_100012",
-                    "x": 704,
-                    "y": 448,
+                    "x": 1120,
+                    "y": 416,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -105,6 +107,54 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_100012",
                     "objId": "e7e44cd1-42cd-4893-8aee-f03389050c87",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "16d38b46-4e87-4ee9-bae1-b28bfabd3822",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_42D81DEB",
+                    "x": 256,
+                    "y": 928,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_42D81DEB",
+                    "objId": "967eafbd-e6bb-49ac-9693-877d2298a350",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "8c9838ec-03ab-42ad-8bdb-afaa8a0202e6",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_28D617E9",
+                    "x": 480,
+                    "y": 928,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_28D617E9",
+                    "objId": "967eafbd-e6bb-49ac-9693-877d2298a350",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
@@ -193,7 +243,7 @@
         "Height": 1080,
         "Width": 1920,
         "inheritRoomSettings": false,
-        "persistent": false
+        "persistent": true
     },
     "viewSettings": {
         "id": "473a251e-ada3-4dee-8464-3a271420a980",

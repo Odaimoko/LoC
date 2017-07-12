@@ -72,6 +72,11 @@ if(dead==0){
 		if (jump_count_down <= 0){
 			jump_count_down = jump_count_set;
 		}
+	}
+	else if (sprite_index == spr_picture) {
+		x += 2*sin(deadtheta);
+		y += 2*sin(deadtheta);
+		deadtheta += random_range(0,0.2);
 	} 
 }
 else if(dead==1)
