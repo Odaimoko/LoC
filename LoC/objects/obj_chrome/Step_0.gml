@@ -50,16 +50,22 @@ if(mouse_check_button(mb_left) && shoot_interval <= 0
 	switch(shooting)
 	{
 		case "r":
-			if(shootRed==1)
+			if(shootRed==1){
 				with(theid) sprite_index = spr_red_bullet;
+				audio_play_sound(biu,1,0);
+			}
 			break;
 		case "g":
-			if(shootGreen==1)
+			if(shootGreen==1){
 				with(theid) sprite_index = spr_green_bullet;
+				audio_play_sound(biu,1,0);
+			}
 			break;
 		case "y":
-			if(shootYellow==1)
+			if(shootYellow==1){
 				with(theid) sprite_index = spr_yellow_bullet;
+				audio_play_sound(biu,1,0);
+			}
 			break;
 	}
 	
