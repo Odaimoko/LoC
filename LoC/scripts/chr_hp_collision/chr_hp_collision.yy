@@ -1,8 +1,8 @@
 {
-    "id": "850f224f-8fbe-4b09-a84b-deff180401d1",
+    "id": "aab122c5-55a9-4ae6-b733-bbc42856966b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "creat_hp",
+    "name": "chr_hp_collision",
     "IsCompatibility": false,
     "IsDnD": false
 }

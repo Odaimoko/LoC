@@ -274,7 +274,7 @@
             "Key": "850f224f-8fbe-4b09-a84b-deff180401d1",
             "Value": {
                 "id": "b136b838-4bbe-42d8-a343-0ef405630792",
-                "resourcePath": "scripts\/creat_hp\/creat_hp.yy",
+                "resourcePath": "scripts\\create_hp\\create_hp.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -340,6 +340,14 @@
                 "id": "37365d3b-3ebb-4243-877e-8e67c5b5802e",
                 "resourcePath": "objects\/obj_safari\/obj_safari.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aab122c5-55a9-4ae6-b733-bbc42856966b",
+            "Value": {
+                "id": "94fa0d52-5438-4c17-b057-8cdbbd3624b3",
+                "resourcePath": "scripts\\chr_hp_collision\\chr_hp_collision.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -511,7 +519,8 @@
         "46929179-3d7c-4641-ae92-236b9e030d81",
         "b2c9df77-145f-4f42-a699-1a9e4c2a2c4b",
         "850f224f-8fbe-4b09-a84b-deff180401d1",
-        "262be38e-aea1-49b2-906e-ce1e9a3fb882"
+        "262be38e-aea1-49b2-906e-ce1e9a3fb882",
+        "aab122c5-55a9-4ae6-b733-bbc42856966b"
     ],
     "tutorial": ""
 }
