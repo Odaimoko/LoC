@@ -14,15 +14,19 @@ if(back_to_place==false) // doesn't have original place to go
 		instance_destroy();
 }
 else{
-	if point_distance(x, y, original_x, original_y) > 5
+	
+	if(started_back==0)
+		image_alpha-=.1;
+	else
 	{
-		move_towards_point(original_x,original_y, back_speed);
+		
+		image_alpha+=0.1;
+		x=original_x;
+		y=original_y;
 	}
-	else{
-	
-		speed = 0;
-	
-		//solid = !solid;
-	
-	} 
+	if(image_alpha <=0)
+	{
+		started_back=1;
+	}
+
 }
