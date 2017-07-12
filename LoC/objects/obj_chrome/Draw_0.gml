@@ -4,6 +4,11 @@ draw_self();
 
 if(sprite_index != spr_small_chrome){
 	HP_DRAW_Y=y-50;
+	switch(shooting) {
+	case "r": if(shootRed) draw_circle_color(x-30, HP_DRAW_Y, 11, c_orange, c_orange, false); break;
+	case "g": if(shootGreen) draw_circle_color(x, HP_DRAW_Y, 11, c_orange, c_orange, false); break;
+	case "y": if(shootYellow) draw_circle_color(x+30, HP_DRAW_Y, 11, c_orange, c_orange, false); break;
+}
 	if(shootRed) draw_circle_color(x-30, HP_DRAW_Y, 8, c_red, c_red, false);
 	else draw_circle_color(x-30, HP_DRAW_Y, 8, c_gray, c_gray, false);
 	if(shootGreen) draw_circle_color(x, HP_DRAW_Y, 8, c_lime, c_lime, false);
