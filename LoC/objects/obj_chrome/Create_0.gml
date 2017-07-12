@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-chr_stage = 0; // to make cutscene
+
+
 
 vspeed = 0;
 dead=0;
 
 
 str_tutorial="";
-
+str_opening="";
+ang_speed=0;
 
 //shoot
 shooting = "y";

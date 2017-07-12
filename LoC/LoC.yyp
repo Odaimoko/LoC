@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "00374a73-38a6-46c6-ba32-af537ebfe832",
+            "Value": {
+                "id": "f70dce17-94ae-415e-b551-b9965e7ee037",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "paths\/cut_00_safari\/cut_00_safari.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "0113420e-f72b-4f70-8edb-a598e9d51f28",
             "Value": {
                 "id": "c4c312fa-ec47-4e2e-91d1-e10facc95e7f",

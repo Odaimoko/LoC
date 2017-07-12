@@ -66,3 +66,4 @@ switch(global.cutscene)
 
 draw_set_font(fnt_tutorial);
 draw_text(x,y-100,str_tutorial);
+draw_text(x,y-100,str_opening);

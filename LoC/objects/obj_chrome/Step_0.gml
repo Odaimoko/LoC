@@ -5,15 +5,56 @@
 // You can write your code in this editor
 
 // FIRST CUT SCENE
-if (global.cutscene == "-00"){
+
+image_angle-=ang_speed;
+// FIRST CUT SCENE
+if (global.cutscene == "103"){
 	// the first scenery, safari flies here and laughs at chrome.
+	// turn around many times 
+	ang_speed=10;
 	
 	
+	str_opening = "Well, I can open it, so be on it."
 	
+} else if(global.cutscene == "106"){
+	str_opening="But this MP4 file stays with me for so long.";
+} else if(global.cutscene == "107"){
 	
+	str_opening="I won't leave HER.";
+}else if(global.cutscene == "108"){
 	
+	str_opening="I won't leave HER.";
+}else if(global.cutscene == "109" ){
+	ang_speed=0;
+	str_opening="How you said that?";
+}else if(global.cutscene == "10a"){
 	
-}
+	str_opening="How you said that?";
+} else if(global.cutscene == "10b"){
+	
+	str_opening="I'm glad to hear it.";
+}else if(global.cutscene == "10d"){
+	ang_speed=10;
+	str_opening="Yeah, She's my MRS RIGHT";
+}else if(global.cutscene == "116"){
+	x-=10;
+	gravity=4;
+	ang_speed=0;
+	str_opening=""
+	if(x<=300) global.cutscene="117";
+} else if(global.cutscene == "11b"){
+	str_opening="...Holy shit! My wife!"
+	if(keyboard_check_pressed(vk_enter))	
+		global.cutscene="120";
+} 
+else if(global.cutscene == "120"){
+	str_opening="Now it's time to save her back!"
+	if(keyboard_check_pressed(vk_enter))	
+		global.cutscene="000";
+} 
+
+
+
 //TUTORIAL
 if(global.cutscene == ""){
 	chr_m_n_s();
@@ -24,6 +65,7 @@ if(global.cutscene == ""){
 	can_d = 1
 } else if (global.cutscene == "000")
 {
+	str_opening="";
 	
 	if (keyboard_check(ord("A")) and place_free(x-1,y)) and (can_a==1){
 		x-=8;

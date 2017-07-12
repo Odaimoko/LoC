@@ -5,24 +5,23 @@
 
 chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 
-global.cutscene = "000";
+
 // first is guanqia No.   0 is the start, z is the end
 // second and third is chr's movement stage;
 // if set to empty string, player can move 
 
-global.cutscene = "-00";
-if(global.cutscene == "-00"){
-	mp4id = instance_create_layer(300,700,"Instances",obj_none);
-	with(mp4id){
+global.cutscene = "100";
+if(global.cutscene == "100"){
+	
+	global.opening_safariid = instance_create_layer(1200,400,"Instances",obj_none);
+	with(global.opening_safariid){
+		
+		sprite_index = spr_safari;
+		visible=1;
+	}
+	global.opening_mp4id = instance_create_layer(300,700,"Instances",obj_none);
+	with(global.opening_mp4id){
 		sprite_index = spr_mp4_blank;
 		visible=1;
 	}
-	
-	
-	safariid = instance_create_layer(1200,400,"Instances",obj_safari);
-	with(safariid){
-		
-	}
-
-
 }
