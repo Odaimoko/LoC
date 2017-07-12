@@ -168,3 +168,7 @@ if(sprite_index == spr_safari){
 	}
 	
 }
+else if(sprite_index == spr_fragment){
+	ang_speed=30;
+	image_angle+=ang_speed;
+}

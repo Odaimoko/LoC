@@ -41,9 +41,38 @@ if (global.cutscene == "103"){
 	gravity=4;
 	ang_speed=0;
 	str_opening=""
-	if(x<=300) global.cutscene="117";
+	
+	
+	global.opening_frag1 = instance_create_layer(x,y,"Instances",obj_none);
+	with(global.opening_frag1)
+	{
+		sprite_index = spr_fragment;	
+	}
+	with(global.opening_frag1){
+		move_towards_point(-1000,y-3000,random_range(14,27));
+	}
+	
+	//global.opennig_frag2 = instance_create_layer(x,y,"Instances",obj_none);
+	//with(global.opening_frag2)
+	//{
+	//	sprite_index = spr_fragment;
+	//}
+	//with(global.opening_frag2){
+	//	move_towards_point(2000,y+3000,random_range(14,27));
+	//}
+	 global.cutscene="11f";
+} else if(global.cutscene == "11f"){
+	x-=10;
+	if(x<=300) 	
+		global.cutscene="117";
 } else if(global.cutscene == "11b"){
-	str_opening="...Holy shit! My wife!"
+	str_opening="...Holy shit! My wife...And I can't play video now!!"
+	
+	//with(global.opening_frag2)
+	//	instance_destroy();
+	with(global.opening_frag1)	
+		instance_destroy();
+		
 	if(keyboard_check_pressed(vk_enter))	
 		global.cutscene="120";
 } 

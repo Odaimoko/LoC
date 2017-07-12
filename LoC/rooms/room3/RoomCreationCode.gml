@@ -19,9 +19,14 @@ if(global.cutscene == "100"){
 		sprite_index = spr_safari;
 		visible=1;
 	}
+	
+	
 	global.opening_mp4id = instance_create_layer(300,700,"Instances",obj_none);
 	with(global.opening_mp4id){
 		sprite_index = spr_mp4_blank;
 		visible=1;
 	}
 }
+global.opening_frag1 = 0;
+global.opening_frag2 = 0;
+

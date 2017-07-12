@@ -2,14 +2,16 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+if(sprite_index)
 
+	draw_self();
 
-draw_text(x-100,y-64,string(global.cutscene));
-draw_text(x,y-64,string(x)+","+string(y));
 
 if(sprite_index == spr_safari){
 	
+	draw_text(x-100,y-64,string(global.cutscene));
+	draw_text(x,y-64,string(x)+","+string(y));
+
 	draw_set_font(fnt_tutorial);
 	draw_text(x-100,y-100,str_opening);
 	if (global.cutscene == "102" or global.cutscene=="113")
