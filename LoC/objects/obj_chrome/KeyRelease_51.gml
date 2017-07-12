@@ -1,1 +1,1 @@
-obj_chrome.shooting = "y";
+if (shootYellow) obj_chrome.shooting = "y";

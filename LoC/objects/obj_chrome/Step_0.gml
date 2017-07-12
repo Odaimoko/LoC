@@ -3,6 +3,21 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+
+if(shootGreen == 0 && shooting = "g") {
+	if(shootRed != 0) shooting = "r";
+	else if(shootYellow != 0) shooting = "y";
+}
+if(shootYellow == 0 && shooting = "y") {
+	if(shootRed != 0) shooting = "r";
+	else if(shootGreen != 0) shooting = "g";
+}
+if(shootRed == 0 && shooting = "r") {
+	if(shootGreen != 0) shooting = "g";
+	else if(shootYellow != 0) shooting = "y";
+}
+
+
 if(global.cutscene == ""){
 	chr_m_n_s();
 	
