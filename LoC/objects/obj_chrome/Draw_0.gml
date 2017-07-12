@@ -40,10 +40,29 @@ switch(global.cutscene)
 		str_tutorial="ANOTHER 'Q' TO CHANGE BACK";
 		break;
 	case "005":
-		str_tutorial="NOW LET' LEARN HOW TO SHOOT-->>PICK UP THAT RED BLOCK";
+	case "010":
+		str_tutorial="NOW LET'S LEARN HOW TO SHOOT-->>PICK UP THAT RED CRESCENT";
 		// at this stage, player can shoot 
 		break;
+	case "006":
+		break;
+	case "007":
+		str_tutorial="IF HIT BT BULLETS, YOUR CURRENT BULLET WILL LOST";
+		break;
+	case "008":
+		str_tutorial="SOME ENEMIES DROP COLORED CRESCENTS, PICK IT UP!";
+		break;
+	case "009":
+		str_tutorial="NOW PRESS '3' TO CHOOSE YELLOW BULLET";
+		break;
+	case "00a":
+		str_tutorial="IT'S OK FOR YOU TO CONTINUE YOUR JOURNEY. ENJOY...";
+		break;
+	default:
+		str_tutorial="";
+		break;
 }
+
 
 draw_set_font(fnt_tutorial);
 draw_text(x,y-100,str_tutorial);

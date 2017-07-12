@@ -4,19 +4,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(shootGreen == 0 && shooting = "g") {
-	if(shootRed != 0) shooting = "r";
-	else if(shootYellow != 0) shooting = "y";
-}
-if(shootYellow == 0 && shooting = "y") {
-	if(shootRed != 0) shooting = "r";
-	else if(shootGreen != 0) shooting = "g";
-}
-if(shootRed == 0 && shooting = "r") {
-	if(shootGreen != 0) shooting = "g";
-	else if(shootYellow != 0) shooting = "y";
-}
-
 
 if(global.cutscene == ""){
 	chr_m_n_s();
@@ -94,14 +81,50 @@ else if (global.cutscene == "004"){
 }
 else if (global.cutscene == "005"){
 	chr_m_n_s();
-	if(shootRed==1) global.cutscene = "006";
+	create_hp(spr_red_bullet,500,700);
+	
+	global.cutscene = "010";
+}
+else if(global.cutscene == "010"){
+	chr_m_n_s();
+	if(shootRed==1) 
+		global.cutscene="006";
 }
 else if (global.cutscene == "006"){
 	chr_m_n_s();
-	create_enemy(spr_picture,1000,200);
-	global.cutscene="007";
+	var ene =  create_enemy(spr_picture,1000,200);
+	with(ene){
+		global.ene_x = x;
+		global.ene_y = y;
+	}
+	if(instance_exists(obj_enemy))
+		global.cutscene="007";
 }
 else if (global.cutscene == "007"){
 	chr_m_n_s();
+	// fighting
+	if(not instance_exists(obj_enemy))
+	{
+	create_hp(spr_yellow_bullet,global.ene_x,global.ene_y);
+		global.cutscene="008";
+	}
+}
+else if (global.cutscene == "008"){
+	chr_m_n_s();
+	if(shootYellow==1)
+		global.cutscene="009";
+}
+else if (global.cutscene == "009"){
+	chr_m_n_s();
 	
+	if(shooting=="y")
+		global.cutscene="00a";
+}
+else if (global.cutscene == "00a"){
+	chr_m_n_s();
+	alarm[0]=2000;
+	global.cutscene = "00b";
+}
+else if (global.cutscene == "00b"){
+	chr_m_n_s();
 }

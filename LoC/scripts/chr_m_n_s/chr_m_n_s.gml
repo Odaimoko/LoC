@@ -1,4 +1,17 @@
 
+if(shootGreen == 0 && shooting = "g") {
+	if(shootRed != 0) shooting = "r";
+	else if(shootYellow != 0) shooting = "y";
+}
+if(shootYellow == 0 && shooting = "y") {
+	if(shootRed != 0) shooting = "r";
+	else if(shootGreen != 0) shooting = "g";
+}
+if(shootRed == 0 && shooting = "r") {
+	if(shootGreen != 0) shooting = "g";
+	else if(shootYellow != 0) shooting = "y";
+}
+
 if place_free(x, y+1){
    gravity = 2; 
 }
