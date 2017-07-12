@@ -13,12 +13,30 @@ if(dead==0){
 
 	if vspeed>10{vspeed=10;}
 
-	// shoot the enemy
-	if (bullet_countdown <= 0){
-		instance_create_layer(x,y,"bulletlayer",obj_safari_bullet);
-		bullet_countdown = bullet_count_set;
+
+	// shooting part
+	if (bullet_count_down_active >= 0){
+		-- bullet_count_down_active;
+		-- bullet_count_down;
+		if (bullet_count_down <= 0){
+			// shooting
+			var theid = instance_create_layer(x,y,"bulletlayer",obj_safari_bullet);
+			// bullet count down for camera, reset countdown shooting
+			bullet_count_down = bullet_count_set;
+		}
 	}
-	bullet_countdown = bullet_countdown - 1;
+	// slient time
+	if ((bullet_count_down_slient >= 0) and (bullet_count_down_active <= 0)){
+		--bullet_count_down_slient;
+	}
+	
+	// rest bullet count down only both countdown are zero
+	if ((bullet_count_down_active <= 0) and (bullet_count_down_slient <= 0)){
+		// slient time and shooting time
+		bullet_count_down_active = bullet_count_down_active_set;
+		bullet_count_down_slient = bullet_count_down_slient_set;
+	}
+	
 
 	// move around
 	// time to change direction
@@ -81,5 +99,5 @@ if(dead==0){
 	}
 } else if(dead==1)
 {
-	script_execute(toHeaven);
+	script_execute(posthumous);
 }
