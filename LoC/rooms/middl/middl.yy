@@ -2,9 +2,9 @@
     "id": "d133f7e5-4acb-4dc8-b582-c71c88082a64",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "room0",
+    "name": "middl",
     "IsDnD": false,
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -15,8 +15,7 @@
         "b8d9e8cb-fc9f-4db5-bfc0-9a3ae1855796",
         "890f7695-66ea-4167-9ae9-f5ef86a57fc7",
         "3f953a54-b65f-491f-8fd9-11762a5e5b17",
-        "3d6a4b56-1245-4951-aaf9-506812ef6900",
-        "9287c7ca-fc06-4110-b704-37b703a08eb6"
+        "3d6a4b56-1245-4951-aaf9-506812ef6900"
     ],
     "layers": [
         {
@@ -75,8 +74,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_53FC821E",
-                    "x": 544,
-                    "y": 832,
+                    "x": 832,
+                    "y": 960,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -99,8 +98,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_61729FDB",
-                    "x": 832,
-                    "y": 736,
+                    "x": 928,
+                    "y": 640,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -123,8 +122,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_402E0B5D",
-                    "x": 1664,
-                    "y": 832,
+                    "x": 1376,
+                    "y": 704,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -147,8 +146,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_100004",
-                    "x": 1376,
-                    "y": 416,
+                    "x": 1216,
+                    "y": 384,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -171,8 +170,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_100005",
-                    "x": 896,
-                    "y": 192,
+                    "x": 544,
+                    "y": 384,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -206,30 +205,6 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_6876E54B",
                     "objId": "44d01664-c860-4041-af5a-cbc3225b303c",
-                    "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
-                },
-                {
-                    "id": "9287c7ca-fc06-4110-b704-37b703a08eb6",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_78A8871B",
-                    "x": 1504,
-                    "y": 192,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_78A8871B",
-                    "objId": "ae2d052a-8ff7-4820-8b5b-36f1329509a1",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1

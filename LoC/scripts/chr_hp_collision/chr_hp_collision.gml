@@ -9,14 +9,16 @@ with(other){
 switch(color)
 {
 	case spr_red_bullet:
-		if(shootRed==0)
+		if(shootRed==0){
 			shootRed=1;
+			hp++;
+		}
 		break;
 	case spr_green_bullet:
-		if(shootGreen==0)shootGreen =1;
+		if(shootGreen==0){shootGreen =1;hp++}
 		break;
 	case spr_yellow_bullet:
-		if(shootYellow==0) shootYellow=1;
+		if(shootYellow==0) {shootYellow=1;hp++}
 		break;
 	
 }
