@@ -4,7 +4,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+// FIRST CUT SCENE
+if (global.cutscene == "-00"){
+	// the first scenery, safari flies here and laughs at chrome.
+	
+	
+	
+	
+	
+	
+}
+//TUTORIAL
 if(global.cutscene == ""){
 	chr_m_n_s();
 	

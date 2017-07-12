@@ -29,7 +29,7 @@ can_d = 0
 // big and small chrome's hp
 CHROME_MAXHP_BIG=4;
 CHROME_MAXHP_SMALL=1;
-hp = CHROME_MAXHP_BIG;
+hp = 1;
 pre_hp_big=CHROME_MAXHP_BIG;
 pre_hp_small = CHROME_MAXHP_SMALL;
 
