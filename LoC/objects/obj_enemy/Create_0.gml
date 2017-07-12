@@ -11,6 +11,12 @@ hp = 0;
 bullet_count_down = 0;
 bullet_count_set = 0;
 
+// slient shooting time for camera
+bullet_count_down_slient = 0;
+
+// active shooting time for camera
+bullet_count_down_active = 0;
+
 // for random direction
 count_down = 0;
 direct = 0;
