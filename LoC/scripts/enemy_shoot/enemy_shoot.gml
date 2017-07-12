@@ -1,8 +1,7 @@
-// shooting
-bullet_count_down = bullet_count_down - 1;
+
+--bullet_count_down;
 if (bullet_count_down <= 0){
 	var theid = instance_create_layer(x,y,"bulletlayer",obj_dot_bullet);
-	var et = enemyType;
 	var si = sprite_index;
 	
 	with(theid)

@@ -1,0 +1,1 @@
+create_enemy(spr_picture,1000,600);

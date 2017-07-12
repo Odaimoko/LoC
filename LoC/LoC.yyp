@@ -172,25 +172,6 @@
             }
         },
         {
-            "Key": "30820692-c771-451f-a825-a65639bb4c59",
-            "Value": {
-                "id": "17829428-efc2-4163-8fcc-e69fda82151c",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/obj_music\/obj_music.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "31132a93-4322-4983-851a-ae7f9c55efe4",
             "Value": {
                 "id": "3414315d-9476-48b9-afd9-f8b82cd7be4b",
@@ -302,6 +283,25 @@
                 ],
                 "resourcePath": "objects\/obj_bar\/obj_bar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "46929179-3d7c-4641-ae92-236b9e030d81",
+            "Value": {
+                "id": "899c4c83-8634-4169-a36f-0ff5394424d1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/enemy_move\/enemy_move.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -718,7 +718,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/obj_picture\/obj_picture.yy",
+                "resourcePath": "objects\/obj_enemy\/obj_enemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -738,6 +738,44 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/toHeaven\/toHeaven.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b06614c3-fc0d-42c5-b639-4e47c32050b0",
+            "Value": {
+                "id": "c24df690-7b90-411d-af4a-96fc137239f3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/enemy_shoot\/enemy_shoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2c9df77-145f-4f42-a699-1a9e4c2a2c4b",
+            "Value": {
+                "id": "dd9326b9-15f5-4de2-84ff-14bc076c3f78",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/create_enemy\/create_enemy.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -987,12 +1025,34 @@
                 "resourcePath": "views\/f6d740a0-d861-4f0f-8c1f-783130da836f.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fcb4774b-c64e-4f60-8eaf-bb3362b11561",
+            "Value": {
+                "id": "21636847-67e4-4006-b077-180249dca6fd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room3\/room3.yy",
+                "resourceType": "GMRoom"
+            }
         }
     ],
     "script_order": [
         "ae70bb3e-f796-48f0-9285-dee5752df65a",
         "31dafa24-f78c-471b-b6cc-ed785f8e2667",
-        "206a80bb-7296-42b0-9088-9bc656f7501e"
+        "206a80bb-7296-42b0-9088-9bc656f7501e",
+        "b06614c3-fc0d-42c5-b639-4e47c32050b0",
+        "46929179-3d7c-4641-ae92-236b9e030d81",
+        "b2c9df77-145f-4f42-a699-1a9e4c2a2c4b"
     ],
     "tutorial": ""
 }
