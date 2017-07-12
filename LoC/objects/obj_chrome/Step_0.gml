@@ -137,6 +137,14 @@ if(global.cutscene == ""){
 }
 else if (global.cutscene == "001")
 {
+	can_d=1
+	can_a=1
+	if place_free(x, y+1){
+	   gravity = 2; 
+	}
+	else{
+	   gravity = 0;
+	}
 	if (keyboard_check(ord("A")) and place_free(x-1,y)) and (can_a==1){
 		x-=8;
 	}
@@ -144,8 +152,6 @@ else if (global.cutscene == "001")
 	if (keyboard_check(ord("D")) and place_free(x+1,y)) and (can_d==1){
 		x+=8;
 	}
-	can_d=1
-	can_a=1
 	if(x>=350) global.cutscene="002";
 }
 else if (global.cutscene == "002")
@@ -228,7 +234,7 @@ else if (global.cutscene == "009"){
 }
 else if (global.cutscene == "00a"){
 	chr_m_n_s();
-	alarm[0]=2000;
+	alarm[0]=300;
 	global.cutscene="00b";
 }
 else if (global.cutscene == "00b"){

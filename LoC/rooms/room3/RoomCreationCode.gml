@@ -10,7 +10,7 @@ chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 // second and third is chr's movement stage;
 // if set to empty string, player can move 
 
-global.cutscene = "100";
+global.cutscene = "000";
 if(global.cutscene == "100"){
 	
 	global.opening_safariid = instance_create_layer(1200,400,"Instances",obj_none);
