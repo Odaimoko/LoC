@@ -41,13 +41,13 @@ switch(global.cutscene)
 		break;
 	case "005":
 	case "010":
-		str_tutorial="NOW LET'S LEARN HOW TO SHOOT-->>PICK UP THAT RED CRESCENT";
+		str_tutorial="NOW HOW TO SHOOT-->PICK UP THAT RED CRESCENT";
 		// at this stage, player can shoot 
 		break;
 	case "006":
 		break;
 	case "007":
-		str_tutorial="IF HIT BT BULLETS, YOUR CURRENT BULLET WILL LOST";
+		str_tutorial="IF HIT BT BULLETS, MY CURRENT BULLET WILL LOST";
 		break;
 	case "008":
 		str_tutorial="SOME ENEMIES DROP COLORED CRESCENTS, PICK IT UP!";
@@ -66,4 +66,11 @@ switch(global.cutscene)
 
 draw_set_font(fnt_tutorial);
 draw_text(x,y-100,str_tutorial);
+if (global.cutscene == "007"){
+	draw_text(x,y-140,"IF I CAN'T SHOOT AND AM HURT, I'LL ALSO DIE!");
+}
+else if (global.cutscene == "004"){
+	draw_text(x,y-140,"SMALLER ME CAN'T SHOOT AND IF HURT, I'LL DIE!");
+}
+
 draw_text(x,y-100,str_opening);

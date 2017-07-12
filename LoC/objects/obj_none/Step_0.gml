@@ -151,9 +151,9 @@ if(sprite_index == spr_safari){
 	{
 		
 		targetX = 2000;
-		move_towards_point(targetX,y+200,random_range(24,27));
+		move_towards_point(targetX,y+200,random_range(44,47));
 		with(global.opening_mp4id)
-			move_towards_point(2000,y+200,random_range(24,27));
+			move_towards_point(2000,y+200,random_range(44,47));
 		global.cutscene="11a";
 	}else if (global.cutscene == "11a")
 	{

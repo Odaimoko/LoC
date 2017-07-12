@@ -66,7 +66,7 @@ if (global.cutscene == "103"){
 	if(x<=300) 	
 		global.cutscene="117";
 } else if(global.cutscene == "11b"){
-	str_opening="...Holy shit! My wife...And I can't play video now!!"
+	str_opening="...Holy shit! My wife...And I CAN'T play video now!!"
 	
 	//with(global.opening_frag2)
 	//	instance_destroy();
@@ -77,9 +77,36 @@ if (global.cutscene == "103"){
 		global.cutscene="120";
 } 
 else if(global.cutscene == "120"){
-	str_opening="Now it's time to save her back!"
+	str_opening="SPOTLIGHT!!!SPOTLIGHT!!!"
 	if(keyboard_check_pressed(vk_enter))	
-		global.cutscene="000";
+		global.cutscene="121";
+} 
+
+else if(global.cutscene == "121"){
+	str_opening="Damn..Permission Denied..."
+	if(keyboard_check_pressed(vk_enter))	
+		global.cutscene="122";
+} 
+
+else if(global.cutscene == "122"){
+	str_opening="Now it's time to save her back! Myself!"
+	if(keyboard_check_pressed(vk_enter))	
+		global.cutscene="123";
+} 
+else if(global.cutscene == "123"){
+	str_opening="Well...Long time no move."
+	if(keyboard_check_pressed(vk_enter))	
+		global.cutscene="124";
+} 
+
+else if(global.cutscene == "124"){
+	str_opening="Let me familiarize myself with movement."
+	if(keyboard_check_pressed(vk_enter)){
+	
+			str_opening="";
+			global.cutscene="000";
+
+	}	
 } 
 
 
@@ -94,7 +121,6 @@ if(global.cutscene == ""){
 	can_d = 1
 } else if (global.cutscene == "000")
 {
-	str_opening="";
 	
 	if (keyboard_check(ord("A")) and place_free(x-1,y)) and (can_a==1){
 		x-=8;
