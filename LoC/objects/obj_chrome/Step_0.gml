@@ -10,20 +10,20 @@ else{
 if vspeed>MAX_DOWNWARD_SPEED{vspeed=MAX_DOWNWARD_SPEED}
 
 
-if (keyboard_check(ord("W")) and !place_free(x,y+1)){
+if (keyboard_check(ord("W")) and !place_free(x,y+1)) and (can_w==1){
 	vspeed-=30;
 }
-if (keyboard_check(ord("A")) and place_free(x-1,y)){
+if (keyboard_check(ord("A")) and place_free(x-1,y)) and (can_a==1){
 	x-=8;
 }
-if (keyboard_check(ord("D")) and place_free(x+1,y)){
+if (keyboard_check(ord("D")) and place_free(x+1,y)) and (can_d==1){
 	x+=8;
 }
 
 
 // go into folder
 //draw_text(x,y,instance_nearest(x,y,obj_folder));
-if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder){
+if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1){
 	if instance_nearest(x,y,obj_folder)==100004{
 		room_goto(stage1);
 	}
