@@ -22,7 +22,7 @@ else{
 	
 		speed = 0;
 	
-		solid = !solid;
+		//solid = !solid;
 	
 	} 
 }

@@ -1,17 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 if place_free(x, y+1){
-   gravity = 0.5; 
+   gravity = 2; 
 }
 else{
    gravity = 0;
 }
 
-if vspeed>10{vspeed=10}
+if vspeed>MAX_DOWNWARD_SPEED{vspeed=MAX_DOWNWARD_SPEED}
 
 
 if (keyboard_check(ord("W")) and !place_free(x,y+1)){
-	vspeed-=18;
+	vspeed-=30;
 }
 if (keyboard_check(ord("A")) and place_free(x-1,y)){
 	x-=8;
