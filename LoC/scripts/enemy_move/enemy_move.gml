@@ -1,7 +1,7 @@
 
-if(sprite_index == spr_music){
 	
-	if(dead==0){
+if(dead==0){
+	if(sprite_index == spr_music){
 		if place_free(x, y+1){
 		   gravity = 0.5; 
 		}
@@ -72,10 +72,9 @@ if(sprite_index == spr_music){
 		if (jump_count_down <= 0){
 			jump_count_down = jump_count_set;
 		}
-	} else if(dead==1)
-	{
-		script_execute(toHeaven);
-	}
-
-
+	} 
+}
+else if(dead==1)
+{
+	script_execute(posthumous);
 }

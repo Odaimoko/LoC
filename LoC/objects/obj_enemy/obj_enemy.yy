@@ -5,16 +5,6 @@
     "name": "obj_enemy",
     "eventList": [
         {
-            "id": "17850233-48cd-4091-a4d0-1c2cbee6248b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "0a7ce8d1-3048-44d8-9840-4dfde64f0085",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "ae2d052a-8ff7-4820-8b5b-36f1329509a1"
-        },
-        {
             "id": "017a2f06-4ba8-4aac-9028-fb529cadfacb",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -80,7 +70,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "solid": true,
-    "spriteId": "4a2624cc-3cf6-4369-8724-3258e013423e",
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

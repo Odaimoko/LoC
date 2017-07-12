@@ -737,7 +737,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/toHeaven\/toHeaven.yy",
+                "resourcePath": "scripts\/posthumous\/posthumous.yy",
                 "resourceType": "GMScript"
             }
         },

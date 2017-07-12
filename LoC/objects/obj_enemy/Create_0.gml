@@ -21,3 +21,11 @@ jump_count_set = 60;
 // for jump
 jump_count_set = 60;
 jump_count_down = 40;
+
+
+//posthumous
+back_to_place = false;
+original_x = 0;
+original_y=0;
+back_speed=10;
+started_back=false;

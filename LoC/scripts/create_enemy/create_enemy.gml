@@ -2,14 +2,16 @@
 // arg0 = sprite
 // arg1 = x
 // arg2 = y
-// arg3 = ???
+// arg3 = backToPlace = goes to original position posthumously
+// arg4 = dead x
+// arg5 = dead y
 
-var theid  = instance_create_layer(argument1,argument2,"Instances",obj_enemy);
+var theid  = instance_create_layer(argument[1],argument[2],"Instances",obj_enemy);
 
 
 
 with (theid){
-	sprite_index = argument0;
+	sprite_index = argument[0];
 
 	switch(sprite_index){
 	
@@ -32,7 +34,7 @@ with (theid){
 			
 
 			// hp
-			hp = 20;
+			hp = 10;
 
 			// shooting
 			bullet_count_down = 30;
@@ -40,14 +42,18 @@ with (theid){
 			
 			
 			break;
-
-
 	
 	
 	}
-
-
-
+	
+	
+	if(argument_count==6)
+	{
+		back_to_place = argument[3];
+		original_x = argument[4];
+		original_y = argument[5];
+	
+	}
 
 
 
