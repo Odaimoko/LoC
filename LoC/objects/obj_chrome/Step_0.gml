@@ -97,8 +97,7 @@ else if (global.cutscene == "006"){
 		global.ene_x = x;
 		global.ene_y = y;
 	}
-	if(instance_exists(obj_enemy))
-		global.cutscene="007";
+	global.cutscene="007";
 }
 else if (global.cutscene == "007"){
 	chr_m_n_s();
