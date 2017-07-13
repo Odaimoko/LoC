@@ -3,7 +3,7 @@
 if(dead==0){
 	if(sprite_index == spr_music){
 		if place_free(x, y+1){
-		   gravity = 0.5; 
+		   gravity = 0.3; 
 		}
 		else{
 		   gravity = 0;
@@ -80,6 +80,11 @@ if(dead==0){
 	} 
 }
 else if(dead==1)
-{
+{	
+	if(sprite_index == spr_music){
+		if(!audio_is_playing(sound0)) audio_play_sound(sound0,1,0);
+		
+	}
+	gravity = 0;
 	script_execute(posthumous);
 }

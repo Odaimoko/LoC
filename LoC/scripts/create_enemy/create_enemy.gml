@@ -23,8 +23,8 @@ with (theid){
 			direct = 1;
 
 			// for shooting
-			bullet_count_set = 60;
-			bullet_count_down = 60;
+			bullet_count_set = 120;
+			bullet_count_down = 120;
 
 			// for jump
 			jump_count_set = 60;

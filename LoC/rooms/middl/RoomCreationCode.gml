@@ -2,10 +2,17 @@ with(global.chromeid){
 	x=110;
 	y=750;
 }
-create_enemy(spr_picture,500,200,true,770,750);
-create_enemy(spr_picture,1800,300,true,1140,210);
-create_hp(spr_yellow_bullet,100,900);
-create_hp(spr_green_bullet,150,900);
-create_hp(spr_red_bullet,50,900);
+create_enemy(spr_camera,1400,550,true,1360,450);
+//create_enemy(spr_music,1800,300,true,1140,600);
 
-global.cutscene = "";
+with(create_enemy(spr_file,1120,750,true,920,930)){
+	hp=100000;
+	dead = 1;
+}
+with(create_enemy(spr_file,1170,650,true,1080,750)){
+	hp=100000;
+	dead = 1;
+}
+with(create_enemy(spr_music,1570,400,false,800,650))
+with(create_enemy(spr_picture,170,200,true,800,650))
+global.cutscene = "000";
