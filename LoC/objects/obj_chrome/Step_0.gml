@@ -333,4 +333,4 @@ else if (global.cutscene == "00b"){
 
 
 // add living time
-global.thescore += 1/60;
+global.thescore += 1/30;
