@@ -19,6 +19,10 @@ if(random_range(0,10)>4 && hasDroppedBullet==0){
 } else 
 	hasDroppedBullet=1;
 
+if(die_sound_played==0){
+	die_sound_played=1;
+	audio_play_sound(enemy_die,1,0);
+}
 
 // for camera
 if (sprite_index == spr_camera){

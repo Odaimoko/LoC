@@ -101,10 +101,11 @@ else if(dead==1)
 	global.thescore += remain_score;
 	remain_score = 0;
 	// music
-	if(sprite_index == spr_music){
-		if(!audio_is_playing(sound0)) audio_play_sound(sound0,1,0);
+	//if(sprite_index == spr_music){
+	//	if(!audio_is_playing(sound0)) audio_play_sound(sound0,1,0);
 		
-	}
+	//}
+	
 	gravity = 0;
 	script_execute(posthumous);
 }

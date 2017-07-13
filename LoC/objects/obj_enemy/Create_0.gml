@@ -43,6 +43,7 @@ just_created=-1;
 str_swear="";
 
 in_final=0;
+die_sound_played=0;
 
 // for score
 remain_score = 100;

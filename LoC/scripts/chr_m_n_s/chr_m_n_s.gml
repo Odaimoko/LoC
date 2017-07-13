@@ -36,14 +36,20 @@ if (keyboard_check(ord("D")) and place_free(x+1,y)) and (can_d==1){
 // go into folder
 //draw_text(x,y,instance_nearest(x,y,obj_folder));
 if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1){
-	if instance_nearest(x,y,obj_folder)==100006{
+	if instance_nearest(x,y,obj_folder)==10000{
+		room_goto(middl);
+	}
+	if instance_nearest(x,y,obj_folder)==10006{
 		room_goto(middl);
 	}
 	if instance_nearest(x,y,obj_folder)==100001{
 		room_goto(Final);
 	}
-	if instance_nearest(x,y,obj_folder)==100012{
-		room_goto(room0);
+	if instance_nearest(x,y,obj_folder)==folder1id{
+		room_goto(middl);
+	}
+	if instance_nearest(x,y,obj_folder)==folder2id{
+		room_goto(branch);
 	}
 	
 }

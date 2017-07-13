@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "0c895d99-20c3-4df1-bc4c-06c5adc1c71a",
+            "Value": {
+                "id": "c214588d-540d-4dcc-8fce-75adf9685fc1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/enemy_die\/enemy_die.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0e6918c3-f280-49eb-8ccf-e6487f9cfaa2",
             "Value": {
                 "id": "8031c7c0-c760-4818-beac-54c94fb02fa6",

@@ -22,6 +22,7 @@ global.opening_file=0;
 global.tutorial_folder=0;
 global.opening_frag1 = 0;
 global.opening_frag2 = 0;
+//room_goto(Final);
 if(global.cutscene == "100"){
 	
 	global.opening_safariid = instance_create_layer(1200,400,"Instances",obj_none);

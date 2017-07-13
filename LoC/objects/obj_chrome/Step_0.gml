@@ -5,7 +5,13 @@
 // You can write your code in this editor
 
 // FIRST CUT SCENE
-if(keyboard_check_pressed(vk_space)){room_goto(middl);}
+//if(keyboard_check_pressed(vk_space)){
+//	if(string_char_at(global.cutscene,1)=="1")
+//		global.cutscene="112";
+//	if(string_char_at(global.cutscene,1)=="5")
+//		global.cutscene="519";
+
+//}
 image_angle-=ang_speed;
 // FIRST CUT SCENE
 if (global.cutscene == "103"){
@@ -384,14 +390,9 @@ else if (global.cutscene == "00b"){
 		can_shoot=0
 		hp=10000
 	}
-	with(create_enemy(spr_folder,900,600)){
-		can_shoot=0
-		hp=10000
-	}
-	with(create_enemy(spr_folder,100,300)){
-		can_shoot=0
-		hp=10000
-	}
+	folder1id=instance_create_layer(900,600,"Instances",obj_folder);
+	folder2id=instance_create_layer(100,300,"Instances",obj_folder);
+	
 	create_enemy(spr_picture,1400,200,true,600,800);
 
 	global.cutscene="";
