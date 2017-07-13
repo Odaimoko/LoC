@@ -393,5 +393,7 @@ else if (global.cutscene == "00b"){
 }
 
 
-// add living time
-global.thescore += 1/30;
+// add acore
+if (instance_exists(obj_gameover) == 0){
+	global.thescore += 1/3;
+}

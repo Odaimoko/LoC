@@ -90,4 +90,4 @@ draw_text(x+100,y-100,str_opening);
 // draw the score
 draw_set_font(font_score);
 draw_set_halign(fa_center);
-draw_text(room_width/2,0,"Living time: "+string(global.thescore)+ " seconds");
+draw_text(room_width/2,0,"Score: "+string(global.thescore));
