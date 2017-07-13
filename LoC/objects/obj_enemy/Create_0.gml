@@ -40,3 +40,4 @@ hasDroppedBullet=0;
 image_alpha = 0;
 just_created=-1; 
 //-1: before creation 0: in creation 1:after creation 
+str_swear="";

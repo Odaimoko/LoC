@@ -8,12 +8,15 @@ if(sprite_index)
 
 
 if(sprite_index == spr_safari){
-	
-	draw_text(x-100,y-64,string(global.cutscene));
-	draw_text(x,y-64,string(x)+","+string(y));
+	if(global.debug)
+	{
+		draw_text(x,y-64,string(global.cutscene));
+		draw_text(x,y-64,string(x)+","+string(y));
+	}
 
 	draw_set_font(fnt_tutorial);
-	draw_text(x-100,y-100,str_opening);
+	draw_text(x+200,y-100,str_opening);
+
 	if (global.cutscene == "102" or global.cutscene=="113")
 	{
 		
