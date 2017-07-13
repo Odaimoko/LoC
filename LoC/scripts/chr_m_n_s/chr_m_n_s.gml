@@ -88,5 +88,7 @@ if(mouse_check_button(mb_left) && shoot_interval <= 0
 }
 
 if(y>1080 || hp <= 0){
-	game_restart();
+	if (instance_exists(obj_gameover) == 0){
+		instance_create_layer(x,y,"gameoverlayer",obj_gameover);
+	}
 }
