@@ -236,29 +236,29 @@ else if (global.cutscene == "009"){
 }
 else if (global.cutscene == "020"){
 	chr_m_n_s();
-	if(x<=400)
-		global.cutscene="021";
-}
-else if (global.cutscene == "021"){
-	chr_m_n_s();
-	global.opening_file=create_enemy(spr_file,700,900);
-	with(global.opening_file){
-		can_shoot=0
-		hp=10000;
-	}
-	
-	global.cutscene="022";
-}
-else if (global.cutscene == "022"){
-	chr_m_n_s();
-	if(x>=730&&x<=735&&y>800&&y<870
-		&& keyboard_check(ord("D") ) )
+	if(x<=600)
 		global.cutscene="023";
 }
+//else if (global.cutscene == "021"){
+//	chr_m_n_s();
+//	global.opening_file=create_enemy(spr_file,700,900);
+//	with(global.opening_file){
+//		can_shoot=0
+//		hp=10000;
+//	}
+	
+//	global.cutscene="022";
+//}
+//else if (global.cutscene == "022"){
+//	chr_m_n_s();
+//	if(x>=730&&x<=735&&y>800&&y<870
+//		&& keyboard_check(ord("D") ) )
+//		global.cutscene="023";
+//}
 else if (global.cutscene == "023"){
 	chr_m_n_s();
 	
-	global.tutorial_folder=create_enemy(spr_folder,900,700);
+	global.tutorial_folder=create_enemy(spr_folder,900,900);
 	with(global.tutorial_folder){
 		can_shoot=0;
 		hp=10000;
@@ -269,7 +269,7 @@ else if (global.cutscene == "024"){
 	chr_m_n_s();
 	can_s=1
 	if(x>=920&&x<=1030&&
-		((y>=689 &&y<=694)  ||  (y>=712&&y<=714))
+		((y>=890&&y<=920))
 		&& keyboard_check_pressed(ord("S")) )
 		global.cutscene="025";
 }
@@ -281,10 +281,10 @@ else if (global.cutscene == "025"){
 	with(global.tutorial_folder){
 		instance_destroy()
 	}
-	with(global.opening_file){
-		instance_destroy()
+	//with(global.opening_file){
+	//	instance_destroy()
 
-	}
+	//}
 	
 		global.cutscene="00a";
 }
