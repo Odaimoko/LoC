@@ -182,6 +182,7 @@ else if (global.cutscene == "002")
 
 else if (global.cutscene == "003"){
 	chr_m_n_s();
+	can_q=1
 	if(sprite_index == spr_small_chrome)
 		global.cutscene="004";
 		
@@ -217,7 +218,8 @@ else if (global.cutscene == "007"){
 	// fighting
 	if(not instance_exists(obj_enemy))
 	{
-	create_hp(spr_yellow_bullet,global.ene_x,global.ene_y);
+		if(not instance_exists(obj_hp))
+			create_hp(spr_yellow_bullet,global.ene_x,global.ene_y);
 		global.cutscene="008";
 	}
 }
@@ -230,13 +232,101 @@ else if (global.cutscene == "009"){
 	chr_m_n_s();
 	
 	if(shooting=="y")
+		global.cutscene="020";
+}
+else if (global.cutscene == "020"){
+	chr_m_n_s();
+	if(x<=400)
+		global.cutscene="021";
+}
+else if (global.cutscene == "021"){
+	chr_m_n_s();
+	global.opening_file=create_enemy(spr_file,700,900);
+	with(global.opening_file){
+		can_shoot=0
+		hp=10000;
+	}
+	
+	global.cutscene="022";
+}
+else if (global.cutscene == "022"){
+	chr_m_n_s();
+	if(x>=730&&x<=735&&y>800&&y<870
+		&& keyboard_check(ord("D") ) )
+		global.cutscene="023";
+}
+else if (global.cutscene == "023"){
+	chr_m_n_s();
+	
+	global.tutorial_folder=create_enemy(spr_folder,900,700);
+	with(global.tutorial_folder){
+		can_shoot=0;
+		hp=10000;
+	}
+		global.cutscene="024";
+}
+else if (global.cutscene == "024"){
+	chr_m_n_s();
+	can_s=1
+	if(x>=920&&x<=1030&&
+		((y>=689 &&y<=694)  ||  (y>=712&&y<=714))
+		&& keyboard_check_pressed(ord("S")) )
+		global.cutscene="025";
+}
+else if (global.cutscene == "025"){
+	chr_m_n_s();
+	x=300
+	y=800
+	
+	with(global.tutorial_folder){
+		instance_destroy()
+	}
+	with(global.opening_file){
+		instance_destroy()
+
+	}
+	
 		global.cutscene="00a";
 }
 else if (global.cutscene == "00a"){
 	chr_m_n_s();
-	alarm[0]=300;
+	alarm[0]=150;
 	global.cutscene="00b";
 }
 else if (global.cutscene == "00b"){
+
+	//create_hp(spr_red_bullet,x,y)
+	//create_hp(spr_green_bullet,x,y)
+	//create_hp(spr_yellow_bullet,x,y)
+	create_enemy(spr_picture,400,200,true,1550,940);
+	//create_enemy(spr_music,700,300);
+	with(create_enemy(spr_file,1100,850)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1200,850)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1300,850)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,300,600)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_folder,900,600)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_folder,100,300)){
+		can_shoot=0
+		hp=10000
+	}
+	create_enemy(spr_picture,1400,200,true,600,800);
+
+	global.cutscene="";
 	chr_m_n_s();
+
 }

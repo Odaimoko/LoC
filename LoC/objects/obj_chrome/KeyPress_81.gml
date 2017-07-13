@@ -1,6 +1,4 @@
-if(global.cutscene!="000"&&global.cutscene!="001"
-	&& global.cutscene!="002") // first 3 tutorial cannot change style
-if (keyboard_check(ord("Q")))
+if (keyboard_check(ord("Q")) && can_q==1)
 {
 	
 	if(sprite_index == spr_small_chrome) 

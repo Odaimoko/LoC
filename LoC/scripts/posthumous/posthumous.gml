@@ -11,6 +11,7 @@ if(random_range(0,10)>4 && hasDroppedBullet==0){
 			color = spr_red_bullet;
 			break;
 		case spr_camera:
+		case spr_file:
 			color = spr_green_bullet;
 			break;
 	}	

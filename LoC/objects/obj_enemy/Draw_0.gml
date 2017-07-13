@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if vspeed > 0 && !place_free(x,y+vspeed){
-	move_contact(270)
+draw_self();
+if(global.debug){
+	draw_text(x,y-100,string(x)+","+string(y))
 }
-vspeed = 0

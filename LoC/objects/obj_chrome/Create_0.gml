@@ -26,7 +26,7 @@ can_w = 0
 can_s = 0
 can_a = 0
 can_d = 0
-
+can_q = 0
 
 // big and small chrome's hp
 CHROME_MAXHP_BIG=4;
@@ -38,4 +38,4 @@ pre_hp_small = CHROME_MAXHP_SMALL;
 
 
 // OTHERS
-MAX_DOWNWARD_SPEED = 20;
+MAX_DOWNWARD_SPEED = 30;

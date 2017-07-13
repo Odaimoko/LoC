@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-toCollision();
+if(sprite_index == spr_fragment)
+{
+
+
+}

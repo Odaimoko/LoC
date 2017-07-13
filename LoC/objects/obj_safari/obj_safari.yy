@@ -5,16 +5,6 @@
     "name": "obj_safari",
     "eventList": [
         {
-            "id": "d6b19dc9-8b7c-415b-9ee0-11baf678e055",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "967eafbd-e6bb-49ac-9693-877d2298a350",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a97bed1a-26cb-41c3-8516-4a4940914828"
-        },
-        {
             "id": "07dbc5c7-8a24-418e-8d24-959d9457b136",
             "modelName": "GMEvent",
             "mvc": "1.0",

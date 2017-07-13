@@ -55,8 +55,18 @@ switch(global.cutscene)
 	case "009":
 		str_tutorial="NOW PRESS '3' TO CHOOSE YELLOW BULLET";
 		break;
+	case "020":
+		str_tutorial="NOW GO TO THE LEFT.";
+		break;
+	case "022":
+		str_tutorial="I CAN STICK TO A WALL! JUMP TO THE LEFT OF IT.";
+		break;
+	case "023":
+	case "024":
+		str_tutorial="I CAN GO INTO A FOLDER, PRESS 'S' WHEN ON IT.";
+		break;
 	case "00b":
-		str_tutorial="IT'S OK FOR YOU TO CONTINUE YOUR JOURNEY. ENJOY...";
+		str_tutorial="IT'S OK FOR ME TO CONTINUE MY JOURNEY. ENJOY...";
 		break;
 	default:
 		str_tutorial="";

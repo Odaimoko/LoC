@@ -1,4 +1,4 @@
-if(dead==1)return;
+if(dead==1||can_shoot==0)return;
 
 if (sprite_index == spr_camera){
 	// active shooting time

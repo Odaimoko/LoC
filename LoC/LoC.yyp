@@ -704,25 +704,6 @@
             }
         },
         {
-            "Key": "967eafbd-e6bb-49ac-9693-877d2298a350",
-            "Value": {
-                "id": "8ca2f970-37f3-47a2-9f2b-b702dece6561",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/obj_file\/obj_file.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "99f85ed5-85c1-45f6-a0fd-91a6bb52f356",
             "Value": {
                 "id": "c9f86716-939c-4c1a-99e4-4b611b230af4",
@@ -1157,6 +1138,25 @@
                 ],
                 "resourcePath": "sprites\/spr_camera_broken\/spr_camera_broken.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ecb7b640-7ee9-44b5-8d55-360c69fb4179",
+            "Value": {
+                "id": "958d13e9-7649-44cb-aa43-7eb9a9d02e8c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "paths\/cut_00_safari\/cut_00_safari.yy",
+                "resourceType": "GMPath"
             }
         },
         {
