@@ -10,6 +10,8 @@ dead=0;
 str_tutorial="";
 str_opening="";
 ang_speed=0;
+deadtheta=0;
+
 
 //shoot
 shooting = "y";
