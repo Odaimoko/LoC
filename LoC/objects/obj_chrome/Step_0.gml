@@ -316,22 +316,6 @@ else if (global.cutscene == "020"){
 	if(x<=600)
 		global.cutscene="023";
 }
-//else if (global.cutscene == "021"){
-//	chr_m_n_s();
-//	global.opening_file=create_enemy(spr_file,700,900);
-//	with(global.opening_file){
-//		can_shoot=0
-//		hp=10000;
-//	}
-	
-//	global.cutscene="022";
-//}
-//else if (global.cutscene == "022"){
-//	chr_m_n_s();
-//	if(x>=730&&x<=735&&y>800&&y<870
-//		&& keyboard_check(ord("D") ) )
-//		global.cutscene="023";
-//}
 else if (global.cutscene == "023"){
 	chr_m_n_s();
 	

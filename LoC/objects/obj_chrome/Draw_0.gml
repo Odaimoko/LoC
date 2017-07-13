@@ -48,7 +48,7 @@ switch(global.cutscene)
 	case "006":
 		break;
 	case "007":
-		str_tutorial="IF HIT BT BULLETS, MY CURRENT BULLET WILL LOST";
+		str_tutorial="IF HIT BY BULLETS, MY CURRENT BULLET WILL LOST";
 		break;
 	case "008":
 		str_tutorial="SOME ENEMIES DROP COLORED CRESCENTS, PICK IT UP!";
@@ -58,9 +58,6 @@ switch(global.cutscene)
 		break;
 	case "020":
 		str_tutorial="NOW GO TO THE LEFT.";
-		break;
-	case "022":
-		str_tutorial="I CAN STICK TO A WALL! JUMP TO THE LEFT OF IT.";
 		break;
 	case "023":
 	case "024":
@@ -82,6 +79,9 @@ if (global.cutscene == "007"){
 }
 else if (global.cutscene == "004"){
 	draw_text(x+100,y-140,"SMALLER ME CAN'T SHOOT AND IF HURT, I'LL DIE!");
+}
+else if (global.cutscene == "008"){
+	draw_text(x+100,y-140,"DIFFERENT BULLETS HAS VARIOUS ATTACK VALUE AGAINST ENEMIES.");
 }
 
 draw_text(x+100,y-100,str_opening);
