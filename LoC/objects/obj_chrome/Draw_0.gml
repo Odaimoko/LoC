@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
+
+
 if(sprite_index != spr_small_chrome){
 	HP_DRAW_Y=y-50;
 	switch(shooting) {

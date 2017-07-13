@@ -5,7 +5,6 @@
 global.get_fragent=0;
 global.debug=0;
 global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
-if(global.debug)
 with(global.chromeid){
 	persistent=1
 	//can_w = 1

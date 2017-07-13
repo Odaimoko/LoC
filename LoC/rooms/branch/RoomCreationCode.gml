@@ -1,7 +1,7 @@
-global.cutscene = "";
+
 with(global.chromeid){
 	x=100;
-	y=600;
+	y=800;
 }
 
 with(create_enemy(spr_file,1170,650,true,150,950)){
