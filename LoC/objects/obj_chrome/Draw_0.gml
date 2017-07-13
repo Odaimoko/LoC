@@ -15,7 +15,7 @@ if(sprite_index != spr_small_chrome){
 	if(shootYellow)draw_circle_color(x+30, HP_DRAW_Y, 8, c_yellow, c_yellow, false);
 	else draw_circle_color(x+30, HP_DRAW_Y, 8, c_gray, c_gray, false);
 }
-if(global.debug=1){
+if(global.debug==1){
 	draw_text(x-130,y-64,string(global.cutscene));
 	draw_text(x,y-64,string(x)+","+string(y));
 }

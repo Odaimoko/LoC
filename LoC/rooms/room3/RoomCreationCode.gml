@@ -3,7 +3,7 @@
 //create_enemy(spr_picture,222,744,true,1111,888);
 //create_hp(spr_yellow_bullet,1500,650);
 global.get_fragent=0;
-global.debug=1;
+global.debug=0;
 global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 if(global.debug)
 with(global.chromeid){
