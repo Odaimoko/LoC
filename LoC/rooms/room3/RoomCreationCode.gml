@@ -2,7 +2,7 @@
 //create_enemy(spr_music,500,100,true,4,3);
 //create_enemy(spr_picture,222,744,true,1111,888);
 //create_hp(spr_yellow_bullet,1500,650);
-
+global.get_fragent=0;
 global.debug=1;
 global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 if(global.debug)

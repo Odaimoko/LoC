@@ -5,7 +5,7 @@
 // You can write your code in this editor
 
 // FIRST CUT SCENE
-if(keyboard_check_pressed(vk_space)){room_goto(middl);}
+if(keyboard_check_pressed(vk_space)){room_goto(branch);}
 image_angle-=ang_speed;
 // FIRST CUT SCENE
 if (global.cutscene == "103"){
