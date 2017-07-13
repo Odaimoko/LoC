@@ -5,7 +5,7 @@
 // You can write your code in this editor
 
 // FIRST CUT SCENE
-if(keyboard_check_pressed(vk_space)){room_goto(branch);}
+if(keyboard_check_pressed(vk_space)){room_goto(middl);}
 image_angle-=ang_speed;
 // FIRST CUT SCENE
 if (global.cutscene == "103"){
@@ -111,8 +111,85 @@ else if(global.cutscene == "124"){
 
 
 
+// FINAL 
+if(global.cutscene=="500"){
+
+	if place_free(x, y+1){
+		gravity = 2; 
+	}
+	else{
+		gravity = 0;
+	}
+
+	if(y>990)
+		global.cutscene="501"
+} else if (global.cutscene=="501"){
+	str_opening="Oh shit...Hey! you compass bastard!"
+}else if (global.cutscene=="505"){
+	str_opening="What did you say? Find a right software?"
+
+}
+else if (global.cutscene=="507"){
+	str_opening="Then what are you doing here?"
+}
+else if (global.cutscene=="509"){
+	str_opening=""
+	deadtheta += 10;
+	x+=sin(deadtheta)*30;
+	y-=30;
+	if(y<600)	global.cutscene="50a";
+}
+else if (global.cutscene=="50a"){
+	
+	if place_free(x, y+1){
+		gravity = 2; 
+	}
+	else{
+		gravity = 0;
+	}
+	if(y>990)	global.cutscene="50b"
+}
+
+else if (global.cutscene=="50b"){
+	str_opening="What? So you just rob her from me!"
+}
+else if (global.cutscene=="50d"){
+	str_opening="You just stand there waiting for me!"
+}
+else if (global.cutscene=="514"){
+	str_opening="How about just die in front me and my wife."
+}	
+else if (global.cutscene=="516"){
+	str_opening=""
+	var theid = instance_create_layer(x,y,"bulletlayer",obj_chrome_bullet);
+
+	with(theid){
+		sprite_index = spr_red_bullet;
+		direction = point_direction(x, y, 
+			global.final_safariid.x, global.final_safariid.y);
+		speed=80;
+		image_angle = direction;
+
+	} 
+	audio_play_sound(biu,1,0);
+	if(global.final_safariid.hp<400)
+		global.cutscene="517"
+}	
+else if (global.cutscene=="518"){
+	str_opening="Dear MP4, Just GO!"
+}		
+
+else if (global.cutscene=="519"){
+	str_opening=""
+}		
+
+
+
+
+
 //TUTORIAL
-if(global.cutscene == ""){
+if(global.cutscene == "" || global.cutscene == "600"){
+
 	chr_m_n_s();
 	
 	can_w = 1
@@ -239,22 +316,6 @@ else if (global.cutscene == "020"){
 	if(x<=600)
 		global.cutscene="023";
 }
-//else if (global.cutscene == "021"){
-//	chr_m_n_s();
-//	global.opening_file=create_enemy(spr_file,700,900);
-//	with(global.opening_file){
-//		can_shoot=0
-//		hp=10000;
-//	}
-	
-//	global.cutscene="022";
-//}
-//else if (global.cutscene == "022"){
-//	chr_m_n_s();
-//	if(x>=730&&x<=735&&y>800&&y<870
-//		&& keyboard_check(ord("D") ) )
-//		global.cutscene="023";
-//}
 else if (global.cutscene == "023"){
 	chr_m_n_s();
 	
@@ -332,5 +393,7 @@ else if (global.cutscene == "00b"){
 }
 
 
-// add living time
-global.thescore += 1/30;
+// add acore
+if (instance_exists(obj_gameover) == 0){
+	global.thescore += 1/3;
+}

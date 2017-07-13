@@ -172,3 +172,20 @@ else if(sprite_index == spr_fragment){
 	ang_speed=30;
 	image_angle+=ang_speed;
 }
+
+else if(sprite_index == spr_mp4_blank)
+{
+	if(global.cutscene=="500"||global.cutscene=="501"){
+		deadtheta+=0.1
+		x-=sin(deadtheta)*4;
+		y-=cos(deadtheta)*4
+	}	
+	else if (global.cutscene=="519")
+	{
+		image_alpha -= 0.07;
+		if(image_alpha < 0) {
+				global.cutscene="600"
+		}
+	}
+
+}

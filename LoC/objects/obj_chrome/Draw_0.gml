@@ -16,9 +16,10 @@ if(sprite_index != spr_small_chrome){
 	if(shootYellow)draw_circle_color(x+30, HP_DRAW_Y, 8, c_yellow, c_yellow, false);
 	else draw_circle_color(x+30, HP_DRAW_Y, 8, c_gray, c_gray, false);
 }
-draw_text(x-100,y-64,string(global.cutscene));
-draw_text(x,y-64,string(x)+","+string(y));
-
+if(global.debug=1){
+	draw_text(x-130,y-64,string(global.cutscene));
+	draw_text(x,y-64,string(x)+","+string(y));
+}
 
 
 switch(global.cutscene)
@@ -47,7 +48,7 @@ switch(global.cutscene)
 	case "006":
 		break;
 	case "007":
-		str_tutorial="IF HIT BT BULLETS, MY CURRENT BULLET WILL LOST";
+		str_tutorial="IF HIT BY BULLETS, MY CURRENT BULLET WILL LOST";
 		break;
 	case "008":
 		str_tutorial="SOME ENEMIES DROP COLORED CRESCENTS, PICK IT UP!";
@@ -57,9 +58,6 @@ switch(global.cutscene)
 		break;
 	case "020":
 		str_tutorial="NOW GO TO THE LEFT.";
-		break;
-	case "022":
-		str_tutorial="I CAN STICK TO A WALL! JUMP TO THE LEFT OF IT.";
 		break;
 	case "023":
 	case "024":
@@ -82,6 +80,9 @@ if (global.cutscene == "007"){
 else if (global.cutscene == "004"){
 	draw_text(x+100,y-140,"SMALLER ME CAN'T SHOOT AND IF HURT, I'LL DIE!");
 }
+else if (global.cutscene == "008"){
+	draw_text(x+100,y-140,"DIFFERENT BULLETS HAS VARIOUS ATTACK VALUE AGAINST ENEMIES.");
+}
 
 draw_text(x+100,y-100,str_opening);
 
@@ -89,4 +90,4 @@ draw_text(x+100,y-100,str_opening);
 // draw the score
 draw_set_font(font_score);
 draw_set_halign(fa_center);
-draw_text(room_width/2,0,"Living time: "+string(global.thescore)+ " seconds");
+draw_text(room_width/2,0,"Score: "+string(global.thescore));

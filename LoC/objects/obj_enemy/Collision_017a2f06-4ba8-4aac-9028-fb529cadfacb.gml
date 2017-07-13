@@ -36,7 +36,7 @@ switch(bullet_sprite){
 			hp_decrease=4;
 		break;
 }
-if(dead==0)
+if(dead==0 && hp_decrease!=0)
 	switch(sprite_index)
 	{
 		// bullet hit sound fx

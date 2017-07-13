@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp = 4;
+hp = 400;
+
 vspeed = 0;
+// for final cutscene
+str_opening=""
 
 // for random direction
 count_down = 120;
