@@ -4,10 +4,10 @@
 //create_hp(spr_yellow_bullet,1500,650);
 
 global.debug=1;
-chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
+global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 if(global.debug)
-with(chromeid){
-	
+with(global.chromeid){
+	persistent=1
 	can_w = 1
 	can_s = 1
 	can_a = 1
