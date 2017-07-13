@@ -46,6 +46,13 @@ with (theid){
 	
 	}
 	
+	if(sprite_index == spr_music)
+		str_swear = "Chrome Maza Farka! How dare you play MP3?"
+	if(sprite_index == spr_picture)
+		str_swear = "Chrome Maza Farka! PNG is MINE!!!!"
+	if(sprite_index == spr_camera)
+		str_swear = "Chrome Maza Farka! MP4 is polluted by you!!!!"
+		
 	
 	if(argument_count==6)
 	{

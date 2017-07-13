@@ -17,7 +17,7 @@ with(global.chromeid){
 // first is guanqia No.   0 is the start, z is the end
 // second and third is chr's movement stage;
 // if set to empty string, player can move 
-global.cutscene = "100";
+global.cutscene = "000";
 global.opening_file=0;
 global.tutorial_folder=0;
 global.opening_frag1 = 0;

@@ -75,15 +75,15 @@ switch(global.cutscene)
 
 
 draw_set_font(fnt_tutorial);
-draw_text(x,y-100,str_tutorial);
+draw_text(x+100,y-100,str_tutorial);
 if (global.cutscene == "007"){
-	draw_text(x,y-140,"IF I CAN'T SHOOT AND AM HURT, I'LL ALSO DIE!");
+	draw_text(x+100,y-140,"IF I CAN'T SHOOT AND AM HURT, I'LL ALSO DIE!");
 }
 else if (global.cutscene == "004"){
-	draw_text(x,y-140,"SMALLER ME CAN'T SHOOT AND IF HURT, I'LL DIE!");
+	draw_text(x+100,y-140,"SMALLER ME CAN'T SHOOT AND IF HURT, I'LL DIE!");
 }
 
-draw_text(x,y-100,str_opening);
+draw_text(x+100,y-100,str_opening);
 
 
 // draw the score
