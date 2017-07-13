@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "22380e38-0b9e-44dd-9554-185e8b51c3c7",
+            "Value": {
+                "id": "6e6a55a0-c647-41f9-ad02-c33d70140be3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_gameover\/obj_gameover.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "262be38e-aea1-49b2-906e-ce1e9a3fb882",
             "Value": {
                 "id": "62506c45-5bc8-4e26-ad08-9a4794c98a17",
@@ -264,6 +283,25 @@
                 ],
                 "resourcePath": "scripts\/toCollision\/toCollision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "32713237-40a5-488a-978a-1d477f445a91",
+            "Value": {
+                "id": "61b44a81-f8d8-4b63-9f4d-6821d537cb07",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_gameover\/spr_gameover.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
