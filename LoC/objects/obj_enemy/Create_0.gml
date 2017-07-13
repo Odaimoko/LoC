@@ -42,6 +42,7 @@ just_created=-1;
 //-1: before creation 0: in creation 1:after creation 
 str_swear="";
 
+in_final=0;
 
 // for score
 remain_score = 100;

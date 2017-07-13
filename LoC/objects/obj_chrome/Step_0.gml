@@ -181,7 +181,12 @@ else if (global.cutscene=="518"){
 
 else if (global.cutscene=="519"){
 	str_opening=""
+}			
+else if (global.cutscene=="520"){
+	chr_m_n_s();
 }		
+
+
 
 
 
@@ -196,6 +201,8 @@ if(global.cutscene == "" || global.cutscene == "600"){
 	can_s = 1
 	can_a = 1
 	can_d = 1
+		can_q = 1
+
 } else if (global.cutscene == "000")
 {
 	

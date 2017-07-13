@@ -8,16 +8,16 @@ global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
 if(global.debug)
 with(global.chromeid){
 	persistent=1
-	can_w = 1
-	can_s = 1
-	can_a = 1
-	can_d = 1
+	//can_w = 1
+	//can_s = 1
+	//can_a = 1
+	//can_d = 1
 }
 
 // first is guanqia No.   0 is the start, z is the end
 // second and third is chr's movement stage;
 // if set to empty string, player can move 
-global.cutscene = "000";
+global.cutscene = "100";
 global.opening_file=0;
 global.tutorial_folder=0;
 global.opening_frag1 = 0;

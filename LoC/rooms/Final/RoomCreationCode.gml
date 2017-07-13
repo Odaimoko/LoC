@@ -8,8 +8,8 @@ create_hp(spr_yellow_bullet,100,800);
 create_hp(spr_green_bullet,150,800);
 create_hp(spr_red_bullet,50,800);
 with(global.chromeid){
-	x=500;
-	y=91;
+	x=400;
+	y=400;
 }
 global.final_safariid = instance_create_layer(1800,300,"Instances",obj_safari);
 with(global.final_safariid){

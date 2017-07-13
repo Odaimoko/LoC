@@ -182,10 +182,11 @@ else if(sprite_index == spr_mp4_blank)
 	}	
 	else if (global.cutscene=="519")
 	{
-		image_alpha -= 0.07;
-		if(image_alpha < 0) {
-				global.cutscene="600"
-		}
+		if(image_alpha > 0) {
+			image_alpha -= 0.07;
+		} else
+			instance_destroy();
+
 	}
 
 }

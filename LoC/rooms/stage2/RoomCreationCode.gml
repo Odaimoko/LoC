@@ -3,7 +3,7 @@ global.cutscene=""
 with(global.chromeid){
 	x=200;
 	y=500;
-	shootRed=1;
+	//shootRed=1;
 }
 
 

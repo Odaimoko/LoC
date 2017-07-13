@@ -114,7 +114,89 @@ else if (global.cutscene=="518")
 else if (global.cutscene=="519")
 {
 	str_opening=""
+	
+	with(create_enemy(spr_file,500,950)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,700,750)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1600,930)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1400,830)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1300,830)){
+		can_shoot=0
+		hp=10000
+	}
+	with(create_enemy(spr_file,1200,830)){
+		can_shoot=0
+		hp=10000
+	}
+	
+	with(create_enemy(spr_file,200,630)){
+		can_shoot=0
+		hp=10000
+	}
+	
+	with(create_enemy(spr_file,400,630)){
+		can_shoot=0
+		hp=10000
+	}
+	
+	with(create_enemy(spr_file,600,830)){
+		can_shoot=0
+		hp=10000
+	}
+	
+	
+	
+	with(create_enemy(spr_music,x+200,y+100)){
+		hp=80
+		in_final=1
+		deadtheta=0
+	}
+	with(create_enemy(spr_music,x-300,y+200)){
+		hp=80
+		in_final=1
+		deadtheta=1.57
+	}
+	
+	with(create_enemy(spr_picture,x+100,y+200)){
+		hp=80
+		in_final=1
+		deadtheta=3.14
+	}
+	with(create_enemy(spr_picture,300,200)){
+		hp=80
+		deadtheta=3.14
+	}
+	
+	global.cutscene="520"
+
+}else if(global.cutscene=="520")
+{
+	var flag=0;
+	for(var i=0; (i<instance_number(obj_enemy)); i+=1) 
+	{
+		
+		with((instance_find(obj_enemy,i)))
+		{
+			if(sprite_index!=spr_file)
+				flag=1;
+		}
+		if ((instance_find(obj_enemy,i)).in_final == 1)
+			flag=1;
+	}
+	if(flag==0) global.cutscene="600";
 }
+
 
 
 
