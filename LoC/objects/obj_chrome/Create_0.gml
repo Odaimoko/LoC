@@ -39,3 +39,6 @@ pre_hp_small = CHROME_MAXHP_SMALL;
 
 // OTHERS
 MAX_DOWNWARD_SPEED = 30;
+
+// the living time
+global.thescore = 0;

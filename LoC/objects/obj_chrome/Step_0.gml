@@ -330,3 +330,7 @@ else if (global.cutscene == "00b"){
 	chr_m_n_s();
 
 }
+
+
+// add living time
+global.thescore += 1/60;
