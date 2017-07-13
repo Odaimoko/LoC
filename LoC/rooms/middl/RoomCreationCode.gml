@@ -13,6 +13,6 @@ with(create_enemy(spr_file,1170,650,true,1080,750)){
 	hp=100000;
 	dead = 1;
 }
-with(create_enemy(spr_music,1570,400,false,800,650))
-with(create_enemy(spr_picture,170,200,true,800,650))
-global.cutscene = "000";
+create_enemy(spr_music,1570,400,false,800,650)
+create_enemy(spr_picture,170,200,true,800,650)
+//global.cutscene = "000";

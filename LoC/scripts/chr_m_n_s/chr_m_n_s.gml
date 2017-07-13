@@ -49,6 +49,10 @@ if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1)
 }
 
 
+if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_enemy) and (can_s==1){
+	if (instance_nearest(x,y,obj_enemy).sprite_index==spr_camera_broken)	room_goto(stage2);
+}
+
 // shoot
 --shoot_interval;
 if(mouse_check_button(mb_left) && shoot_interval <= 0
