@@ -1,7 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-x = room_width / 2;
-y = room_height + 85;
-
-spd = 5;
+draw_self();
+draw_text(room_width/2,800,"Press Enter to restart the game");

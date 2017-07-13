@@ -6,5 +6,6 @@ if (keyboard_check_pressed(vk_enter)){
 }
 
 if (y > room_height / 3){
-	y -= 6;
+	y -= spd;
+	spd += 2;
 }
