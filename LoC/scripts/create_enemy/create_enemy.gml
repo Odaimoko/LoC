@@ -16,7 +16,7 @@ with (theid){
 	switch(sprite_index){
 	
 		case spr_music:
-			hp = 15;
+			hp = 60;
 
 			// for random direction
 			count_down = 120;
@@ -34,7 +34,7 @@ with (theid){
 			
 
 			// hp
-			hp = 10;
+			hp = 40;
 
 			// shooting
 			bullet_count_down = 60;
