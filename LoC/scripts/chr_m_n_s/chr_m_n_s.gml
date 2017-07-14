@@ -36,7 +36,7 @@ if (keyboard_check(ord("D")) and place_free(x+1,y)) and (can_d==1){
 // go into folder
 //draw_text(x,y,instance_nearest(x,y,obj_folder));
 if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1){
-	if instance_nearest(x,y,obj_folder)==10000{
+	if room_get_name(room)=="stage2"{
 		room_goto(middl);
 	}
 		if(room_get_name(room)=="branch"){

@@ -10,6 +10,7 @@ if (keyboard_check_pressed(vk_enter)){
 		room_goto(room3);
 		global.cutscene="00a";
 	}
+	instance_destroy();
 }
 
 if (y > room_height / 3){

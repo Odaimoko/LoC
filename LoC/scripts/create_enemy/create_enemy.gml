@@ -42,6 +42,10 @@ with (theid){
 			
 			
 			break;
+			
+		case spr_camera:
+			hp = 10;
+			break;
 	
 	
 	}
