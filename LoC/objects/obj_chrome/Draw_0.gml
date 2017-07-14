@@ -21,7 +21,6 @@ if(global.debug==1){
 	draw_text(x-130,y-64,string(global.cutscene));
 	draw_text(x,y-64,string(x)+","+string(y));
 }
-	draw_text(x,y-64,string(hp));
 
 
 switch(global.cutscene)
