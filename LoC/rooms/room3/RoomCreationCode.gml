@@ -1,22 +1,39 @@
-//create_enemy(spr_picture,222,744,true,1111,888);
-//create_enemy(spr_music,500,100,true,4,3);
-//create_enemy(spr_picture,222,744,true,1111,888);
-//create_hp(spr_yellow_bullet,1500,650);
+
 global.get_fragent=0;
 global.debug=0;
-global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
+if(not instance_exists(obj_chrome)){
+	global.chromeid = instance_create_layer(358,750,"Instances",obj_chrome);
+
+}
 with(global.chromeid){
 	persistent=1
+	x=350
+	y=800
+	hp=1
+	
+	shootRed=0;
+	shootYellow=0;
+	shootGreen=0;
+	sprite_index = spr_big_chrome
+	pre_hp_big=1;
+	pre_hp_small = 1;
 	//can_w = 1
 	//can_s = 1
 	//can_a = 1
 	//can_d = 1
 }
-
 // first is guanqia No.   0 is the start, z is the end
 // second and third is chr's movement stage;
 // if set to empty string, player can move 
-global.cutscene = "100";
+//if( instance_exists(obj_chrome)){
+
+	if(global.chromeid.gamerestarted==1){
+		global.cutscene="00a"
+	}
+	else{
+		global.cutscene = "100";
+	}
+//}
 global.opening_file=0;
 global.tutorial_folder=0;
 global.opening_frag1 = 0;

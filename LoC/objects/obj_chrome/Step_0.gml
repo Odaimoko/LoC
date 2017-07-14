@@ -207,7 +207,7 @@ if(global.cutscene == "" || global.cutscene == "600"){
 	can_s = 1
 	can_a = 1
 	can_d = 1
-		can_q = 1
+	can_q = 1
 
 } else if (global.cutscene == "000")
 {
@@ -369,9 +369,11 @@ else if (global.cutscene == "00a"){
 }
 else if (global.cutscene == "00b"){
 
-	//create_hp(spr_red_bullet,x,y)
-	//create_hp(spr_green_bullet,x,y)
-	//create_hp(spr_yellow_bullet,x,y)
+	if(gamerestarted==1){
+		create_hp(spr_red_bullet,x-200,y)
+		//create_hp(spr_green_bullet,x,y)
+		create_hp(spr_yellow_bullet,x-100,y)
+	}
 	create_enemy(spr_picture,400,200,true,1550,940);
 	//create_enemy(spr_music,700,300);
 	with(create_enemy(spr_file,1100,850)){

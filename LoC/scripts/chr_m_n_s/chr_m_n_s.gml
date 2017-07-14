@@ -39,9 +39,10 @@ if (keyboard_check(ord("S"))) and place_meeting(x,y+1,obj_folder) and (can_s==1)
 	if instance_nearest(x,y,obj_folder)==10000{
 		room_goto(middl);
 	}
-	if instance_nearest(x,y,obj_folder)==10006{
+		if(room_get_name(room)=="branch"){
 		room_goto(middl);
 	}
+	
 	if instance_nearest(x,y,obj_folder)==100001{
 		room_goto(Final);
 	}
@@ -95,6 +96,8 @@ if(mouse_check_button(mb_left) && shoot_interval <= 0
 
 if(y>1080 || hp <= 0){
 	if (instance_exists(obj_gameover) == 0){
+		gamerestarted=1;
+
 		instance_create_layer(x,y,"gameoverlayer",obj_gameover);
 	}
 }
